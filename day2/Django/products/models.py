@@ -18,6 +18,6 @@ class Book(models.Model):  # Book Product
     price = models.PositiveIntegerField()
     shipping_cost = models.IntegerField()
     quantity = models.PositiveIntegerField()
-
+   
     def __str__(self):
         return f"{self.name} by {self.author.name}"
